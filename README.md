@@ -39,13 +39,13 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ![](./screenshots/Desktop_solution.png)
 ![](./screenshots/Desktop_active_solution.png)
-
-<!-- ![](./screenshots/Mobile_solution.png) -->
+![](./screenshots/Mobile_solution.png)
+![](./screenshots/Mobile_active_solution.png)
 
 ### Links
 
-<!-- - Solution URL: (https://www.frontendmentor.io/solutions/responsive-order-summary-card-TFXa8ZDRV) -->
-<!-- - Live Site URL: (https://lm-order-summary-component.netlify.app/) -->
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-pricing-calculator-with-javascript-_h-0Hs-le)
+- Live Site URL: (https://lm-interactive-price-component.netlify.app/)
 
 ## My process
 
