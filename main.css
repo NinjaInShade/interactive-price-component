@@ -81,8 +81,8 @@
   background: linear-gradient(
     to right,
     var(--green-light) 0%,
-    var(--green-light) 60%,
-    var(--light-gray) 60%,
+    var(--green-light) 50%,
+    var(--light-gray) 50%,
     var(--light-gray) 100%
   );
   margin: 40px 0 56px 0;

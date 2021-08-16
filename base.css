@@ -49,9 +49,10 @@
 
 body {
   background: no-repeat url('./assets/bg-pattern.svg') top;
-  background-size: 100% 450px;
   background-color: var(--background);
+  background-size: 100% 450px;
   min-height: 100vh;
+  padding: 75px 30px;
 }
 
 main {
