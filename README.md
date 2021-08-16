@@ -37,7 +37,9 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Screenshot
 
-<!-- ![](./screenshots/Desktop_solution.png) -->
+![](./screenshots/Desktop_solution.png)
+![](./screenshots/Desktop_active_solution.png)
+
 <!-- ![](./screenshots/Mobile_solution.png) -->
 
 ### Links
@@ -52,6 +54,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 - Semantic HTML5 markup
 - CSS custom properties/vars
 - Desktop-first workflow
+- Vanilla javascript
 
 ### What I learned
 

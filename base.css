@@ -52,7 +52,6 @@ body {
   background-color: var(--background);
   background-size: 100% 450px;
   min-height: 100vh;
-  padding: 75px 30px;
 }
 
 main {
@@ -91,6 +90,12 @@ h1 {
 
 .tiny-text {
   font-size: var(--tiny);
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 75px 30px;
+  }
 }
 
 @media (max-width: 375px) {
