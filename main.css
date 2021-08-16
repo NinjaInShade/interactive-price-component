@@ -76,9 +76,64 @@
 }
 
 .pricing-card-slider {
-  margin: 24px 0 40px 0;
+  -webkit-appearance: none;
+  outline: none;
+  background: linear-gradient(
+    to right,
+    var(--green-light) 0%,
+    var(--green-light) 60%,
+    var(--light-gray) 60%,
+    var(--light-gray) 100%
+  );
+  margin: 30px 0 56px 0;
+  border-radius: 6px;
+  height: 8px;
   width: 100%;
+  width: 100%;
+  padding: 0;
 }
+
+/* custom thumb */
+.pricing-card-slider::-webkit-slider-thumb {
+  background: no-repeat url('./assets/icon-slider.svg') center;
+  box-shadow: 0 15px 30px 0 rgba(0, 255, 231, 0.6);
+  background-color: var(--green-dark);
+  transition: all 0.15s ease-in-out;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.pricing-card-slider::-webkit-slider-thumb:hover {
+  background-color: var(--checkbox);
+}
+
+.pricing-card-slider::-moz-range-thumb {
+  background: no-repeat url('./assets/icon-slider.svg') center;
+  box-shadow: 0 15px 30px 0 rgba(0, 255, 231, 0.6);
+  background-color: var(--green-dark);
+  transition: all 0.15s ease-in-out;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border: 0;
+}
+
+.pricing-card-slider::-moz-range-thumb:hover {
+  background-color: var(--checkbox);
+}
+
+/* remove border */
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+
+/* STOP */
 
 .pricing-card-billing-container {
   display: flex;
