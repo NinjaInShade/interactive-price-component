@@ -18,12 +18,13 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <main>
       <header class="header">
-        <img src="./assets/pattern-circles.svg" class="header-img" alt="Decorative circle pattern" aria-hidden="true" />
         <h1 class="header-title">Simple, traffic-based pricing</h1>
         <p class="body-s-text header-description">Sign-up for our 30-day trial. No credit card required.</p>
+        <img src="./assets/pattern-circles.svg" class="header-img" alt="Decorative circle pattern" aria-hidden="true" />
       </header>
 
       <article class="pricing-card">
+       <form>
         <section id="pricing-card-top">
           <div class="pricing-card-between">
             <strong class="body-xs-text pricing-card-views">100k Pageviews</strong>
@@ -44,7 +45,15 @@
             <div class="pricing-card-discount">25% discount</div>
           </div>
         </section>
-        <section id="pricing-card-bottom"></section>
+        <section id="pricing-card-bottom">
+          <ul>
+            <li class="small-text pricing-card-feature"><img src="./assets/icon-check.svg" class="pricing-card-feature-check" alt="Decorative checkmark"/>Unlimited websites</li>
+            <li class="small-text pricing-card-feature"><img src="./assets/icon-check.svg" class="pricing-card-feature-check" alt="Decorative checkmark"/>100% data ownership</li>
+            <li class="small-text pricing-card-feature"><img src="./assets/icon-check.svg" class="pricing-card-feature-check" alt="Decorative checkmark"/>Email reports</li>
+          </ul>
+          <button class="btn btn-primary">Start my trial</button>
+        </section>
+       </form>
       </article>
     </main>
   </body>

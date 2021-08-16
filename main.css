@@ -5,7 +5,9 @@
 
 .header-title,
 .header-description {
+  position: relative;
   text-align: center;
+  z-index: 2;
 }
 
 .header-title {
@@ -38,6 +40,9 @@
 }
 
 #pricing-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 32px 48px;
 }
 
@@ -98,4 +103,19 @@
   font-weight: 800;
   margin-left: 9px;
   padding: 6px;
+}
+
+.pricing-card-feature {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--gray);
+}
+
+.pricing-card-feature:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.pricing-card-feature-check {
+  margin-right: 16px;
 }
