@@ -93,7 +93,7 @@ h1 {
 }
 
 @media (max-width: 650px) {
-  body {
+  main {
     padding: 0 30px 75px 30px;
   }
 }
@@ -112,6 +112,7 @@ h1 {
   }
 
   body {
+    background-position: top;
     background-size: 100% 400px;
   }
 }
