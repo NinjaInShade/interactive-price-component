@@ -44,14 +44,18 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   background: no-repeat url('./assets/bg-pattern.svg') top;
   background-size: 100% 450px;
   background-color: var(--background);
   min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 h1 {
