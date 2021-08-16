@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+  margin: 103px 0 89px 0;
+}
+
+.header-title,
+.header-description {
+  text-align: center;
+}
+
+.header-title {
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.header-description {
+  color: var(--gray);
+}
+
+.header-img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}

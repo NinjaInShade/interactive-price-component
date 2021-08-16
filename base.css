@@ -32,30 +32,71 @@
   --h1: 1.75rem;
 
   --body: 1rem;
-  --body-line-height: 26px;
+
+  --body-s: 0.938rem;
+  --body-s-line-height: 23px;
+
+  --body-xs: 0.875rem;
+
+  --small: 0.75rem;
+
+  --tiny: 0.625rem;
 }
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  background: no-repeat url('./assets/bg-pattern.svg') top / contain;
+  background: no-repeat url('./assets/bg-pattern.svg') top;
+  background-size: 100% 450px;
   background-color: var(--background);
   min-height: 100vh;
 }
 
 h1 {
   font-size: var(--h1);
+  font-weight: 800;
 }
 
 .body-text {
   font-size: var(--body);
 }
 
+.body-s-text {
+  font-size: var(--body-s);
+  line-height: var(--body-s-line-height);
+}
+
+.body-xs-text {
+  font-size: var(--body-xs);
+}
+
+.small-text {
+  font-size: var(--small);
+}
+
+.tiny-text {
+  font-size: var(--tiny);
+}
+
 @media (max-width: 375px) {
   :root {
-    --h1: 22px;
+    --h1: 1.75rem;
 
-    --body: 0.938rem;
+    --body: 1rem;
+
+    --body-s: 0.938rem;
+    --body-s-line-height: 23px;
+
+    --body-xs: 0.875rem;
+
+    --small: 0.75rem;
+
+    --tiny: 0.625rem;
+  }
+
+  body {
+    background-size: 100% 400px;
   }
 }
