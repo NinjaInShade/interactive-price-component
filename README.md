@@ -55,7 +55,11 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### What I learned
 
-Not done yet.
+I learnt how to make a custom range slider (I don't think I've EVER used one in my life anyway), which was fun. I then had to think about the javascript side as it's quite heavy on calculations (hardest one yet I mean from the challenges), so I had to think how I would store the pricing data, and then manipulate it to apply the 25% discount etc...
+
+I split up main functionalities into functions so they could be called whenever, making them reusable.
+
+This was a really fun challenge, as I've never made a pricing calculator like this before!
 
 ## Author
 
