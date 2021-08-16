@@ -10,29 +10,37 @@ const pageViews = document.getElementById('pricing-card-pageviews');
 const pricingText = document.getElementById('pricing-card-price');
 
 const slider = document.getElementById('pricing-card-slider');
+const checkbox = document.getElementById('pricing-card-checkbox');
 
-const pricing = [
+const monthlyPricing = [
   {
     pageViews: '10K',
-    perMonth: '8.00',
+    perMonth: 8,
   },
   {
     pageViews: '50K',
-    perMonth: '12.00',
+    perMonth: 12,
   },
   {
     pageViews: '100K',
-    perMonth: '16.00',
+    perMonth: 16,
   },
   {
     pageViews: '500K',
-    perMonth: '24.00',
+    perMonth: 24,
   },
   {
     pageViews: '1M',
-    perMonth: '36.00',
+    perMonth: 36,
   },
 ];
+
+// This array is a copy of monthly pricing for now, but changes if the yearly billing option is applied/unapplied.
+let finalPricing = monthlyPricing;
+
+function calculateDiscount(num) {
+  return num * 0.25;
+}
 
 function calculateViewsAndPrice() {
   const trueValue = slider.value;
@@ -46,11 +54,24 @@ function calculateViewsAndPrice() {
     '%, var(--light-gray) 100%)';
 
   // The appropriate object in the pricing array depending on value of slider
-  const updatedInformation = pricing[trueValue];
+  const updatedInformation = finalPricing[trueValue];
 
   pageViews.innerText = `${updatedInformation.pageViews} Pageviews`;
-  pricingText.innerHTML = `$${updatedInformation.perMonth}<span>/ month</span>`;
+  pricingText.innerHTML = `$${updatedInformation.perMonth}.00<span>/ month</span>`;
 }
+
+checkbox.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    finalPricing = monthlyPricing.map((data) => {
+      return { pageViews: data.pageViews, perMonth: calculateDiscount(data.perMonth) };
+    });
+  } else {
+    finalPricing = monthlyPricing;
+  }
+
+  // Update the values
+  calculateViewsAndPrice();
+});
 
 // Slider CSS colour styling to left + calculate pageviews and pricing
 slider.oninput = calculateViewsAndPrice;
