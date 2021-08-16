@@ -26,6 +26,7 @@
 
 .pricing-card {
   background: #fff;
+  box-shadow: 0 20px 30px -5px rgba(127, 137, 185, 0.15);
   border-radius: 8px;
   max-width: 540px;
   width: 100%;
@@ -38,4 +39,63 @@
 
 #pricing-card-bottom {
   padding: 32px 48px;
+}
+
+.pricing-card-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-card-views {
+  text-transform: uppercase;
+  color: var(--gray);
+  letter-spacing: 2px;
+}
+
+.pricing-card-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+.pricing-card-price span {
+  font-size: var(--body);
+  color: var(--gray);
+  letter-spacing: initial;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.pricing-card-slider {
+  margin: 24px 0 40px 0;
+  width: 100%;
+}
+
+.pricing-card-billing-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 21px;
+}
+
+.pricing-card-billing-text {
+  color: var(--gray);
+}
+
+.pricing-card-checkbox {
+  margin: 0 16px;
+}
+
+.pricing-card-discount {
+  background-color: var(--orange-light);
+  color: var(--orange);
+  font-size: var(--tiny);
+  border-radius: 9.5px;
+  font-weight: 800;
+  margin-left: 9px;
+  padding: 6px;
 }

@@ -31,6 +31,8 @@
   /* Typography */
   --h1: 1.75rem;
 
+  --strong: 2.5rem;
+
   --body: 1rem;
 
   --body-s: 0.938rem;
@@ -63,6 +65,10 @@ h1 {
   font-weight: 800;
 }
 
+.strong-text {
+  font-size: var(--strong);
+}
+
 .body-text {
   font-size: var(--body);
 }
@@ -87,6 +93,8 @@ h1 {
 @media (max-width: 375px) {
   :root {
     --h1: 1.75rem;
+
+    --strong: 2.5rem;
 
     --body: 1rem;
 

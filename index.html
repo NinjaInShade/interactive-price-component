@@ -24,7 +24,26 @@
       </header>
 
       <article class="pricing-card">
-        <section id="pricing-card-top"></section>
+        <section id="pricing-card-top">
+          <div class="pricing-card-between">
+            <strong class="body-xs-text pricing-card-views">100k Pageviews</strong>
+            <strong class="strong-text pricing-card-price">$16.00<span>/ month</span></strong>
+          </div>
+          <input type="range" class="pricing-card-slider" min="1" max="100" list="pricing-card-slide"></input>
+          <datalist id="pricing-card-slide">
+            <option value="1"></option>
+            <option value="5"></option>
+            <option value="10"></option>
+            <option value="50"></option>
+            <option value="100"></option>
+          </datalist>
+          <div class="pricing-card-billing-container">
+            <p class="small-text pricing-card-billing-text">Monthly Billing</p>
+            <input type="checkbox" class="pricing-card-checkbox">
+            <p class="small-text pricing-card-billing-text">Yearly Billing</p>
+            <div class="pricing-card-discount">25% discount</div>
+          </div>
+        </section>
         <section id="pricing-card-bottom"></section>
       </article>
     </main>
