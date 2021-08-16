@@ -40,7 +40,7 @@ const monthlyPricing = [
 let finalPricing = monthlyPricing;
 
 function calculateDiscount(num) {
-  return num * 0.25;
+  return num * 0.75;
 }
 
 function calculateViewsAndPrice() {
