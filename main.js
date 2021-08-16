@@ -8,6 +8,7 @@
 
 const pageViews = document.getElementById('pricing-card-pageviews');
 const pricingText = document.getElementById('pricing-card-price');
+const pricingTextMobile = document.getElementById('pricing-card-price-mobile');
 
 const slider = document.getElementById('pricing-card-slider');
 const checkbox = document.getElementById('pricing-card-checkbox');
@@ -58,6 +59,7 @@ function calculateViewsAndPrice() {
 
   pageViews.innerText = `${updatedInformation.pageViews} Pageviews`;
   pricingText.innerHTML = `$${updatedInformation.perMonth}.00<span>/ month</span>`;
+  pricingTextMobile.innerHTML = `$${updatedInformation.perMonth}.00<span>/ month</span>`;
 }
 
 checkbox.addEventListener('change', (event) => {

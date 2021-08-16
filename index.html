@@ -19,18 +19,21 @@
     <main>
       <header class="header">
         <h1 class="header-title">Simple, traffic-based pricing</h1>
-        <p class="body-s-text header-description">Sign-up for our 30-day trial. No credit card required.</p>
+        <p class="body-s-text header-description">Sign-up for our 30-day trial.<br /> No credit card required.</p>
         <img src="./assets/pattern-circles.svg" class="header-img" alt="Decorative circle pattern" aria-hidden="true" />
       </header>
 
       <article class="pricing-card">
        <form>
+
+        <!-- TOP SECTION -->
         <section id="pricing-card-top">
           <div class="pricing-card-between">
             <strong class="body-xs-text pricing-card-views" id="pricing-card-pageviews">100k Pageviews</strong>
-            <strong class="strong-text pricing-card-price" id="pricing-card-price">$16.00<span>/ month</span></strong>
+            <strong class="strong-text pricing-card-price pricing-card-price-desktop" id="pricing-card-price">$16.00<span>/ month</span></strong>
           </div>
           <input type="range" class="pricing-card-slider" min="0" max="4" step="1" id="pricing-card-slider" name="page views/pricing slider"></input>
+          <strong class="strong-text pricing-card-price pricing-card-price-mobile" id="pricing-card-price-mobile">$16.00<span>/ month</span></strong>
           <div class="pricing-card-billing-container">
             <p class="small-text pricing-card-billing-text">Monthly Billing</p>
             <label class="pricing-card-checkbox">
@@ -38,11 +41,14 @@
               <span class="pricing-card-checkbox-slider"></span>
             </label>
             <p class="small-text pricing-card-billing-text">Yearly Billing</p>
-            <div class="pricing-card-discount">25% discount</div>
+            <div class="pricing-card-discount" id="pricing-card-discount-desktop">25% discount</div>
+            <div class="pricing-card-discount" id="pricing-card-discount-mobile">-25%</div>
           </div>
         </section>
+
+        <!-- BOTTOM SECTION -->
         <section id="pricing-card-bottom">
-          <ul>
+          <ul class="pricing-card-features">
             <li class="small-text pricing-card-feature"><img src="./assets/icon-check.svg" class="pricing-card-feature-check" alt="Decorative checkmark"/>Unlimited websites</li>
             <li class="small-text pricing-card-feature"><img src="./assets/icon-check.svg" class="pricing-card-feature-check" alt="Decorative checkmark"/>100% data ownership</li>
             <li class="small-text pricing-card-feature"><img src="./assets/icon-check.svg" class="pricing-card-feature-check" alt="Decorative checkmark"/>Email reports</li>

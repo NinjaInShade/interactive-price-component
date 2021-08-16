@@ -94,26 +94,21 @@ h1 {
 
 @media (max-width: 650px) {
   body {
-    padding: 75px 30px;
+    padding: 0 30px 75px 30px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   :root {
-    --h1: 1.75rem;
+    --h1: 1.25rem;
 
-    --strong: 2.5rem;
+    --strong: 2rem;
 
-    --body: 1rem;
+    --body: 0.875rem;
 
-    --body-s: 0.938rem;
-    --body-s-line-height: 23px;
+    --body-s: 0.813rem;
 
-    --body-xs: 0.875rem;
-
-    --small: 0.75rem;
-
-    --tiny: 0.625rem;
+    --body-xs: 0.75rem;
   }
 
   body {

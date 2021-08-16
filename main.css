@@ -19,6 +19,10 @@
   color: var(--gray);
 }
 
+.header-description br {
+  display: none;
+}
+
 .header-img {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -223,4 +227,71 @@ input:checked + .pricing-card-checkbox-slider:before {
 
 .pricing-card-feature-check {
   margin-right: 16px;
+}
+
+#pricing-card-discount-mobile,
+.pricing-card-price-mobile {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .header {
+    margin: 90px 0 70px 0;
+  }
+
+  .header-title {
+    margin-bottom: 8px;
+  }
+
+  .header-description br {
+    display: initial;
+  }
+
+  #pricing-card-top {
+    padding: 34px 24px 40px 24px;
+  }
+
+  #pricing-card-bottom {
+    flex-direction: column;
+    padding: 24px 24px 32px 24px;
+  }
+
+  .pricing-card-features {
+    margin-bottom: 32px;
+  }
+
+  .pricing-card-feature {
+    justify-content: center;
+  }
+
+  #pricing-card-discount-desktop,
+  .pricing-card-price-desktop {
+    display: none;
+  }
+
+  #pricing-card-discount-mobile,
+  .pricing-card-price-mobile {
+    text-align: center;
+    display: block;
+  }
+
+  .pricing-card-billing-container {
+    margin: 35px 0 0 0;
+  }
+
+  .pricing-card-between {
+    justify-content: center;
+  }
+
+  .pricing-card-slider {
+    margin: 40px 0;
+  }
+
+  .pricing-card-checkbox {
+    margin: 0 12px;
+  }
+
+  .pricing-card-discount {
+    margin-left: 5px;
+  }
 }
